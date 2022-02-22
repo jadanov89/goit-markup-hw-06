@@ -695,7 +695,7 @@ a {
 
 
 .backdrop.is-hidden {
-    opacity: 0;
+    /*opacity: 0;*/
     pointer-events: none;
 }
 
@@ -734,6 +734,69 @@ a {
     fill: #000000;
 }
 
+.modal-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    
+    color: #212121;
+    text-align: center;
+}
+
+form {
+    width: 448px;
+    height: 342px;
+    margin: 0 auto;
+}
+
+.form {
+    margin-top: 40px;
+}
+
+.input-block:first-child {
+    margin-top: 12px;
+}
+
+.input-block {
+    margin-top: 10px;
+}
+
+
+label, input {
+    display:block;
+}
+
+.form-label {
+    font-family: Roboto;
+    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1;
+    
+
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+
+    color: #757575;
+}
+
+.form-input {
+    width: 448px;
+    height: 40px;
+    left: 576px;
+    top: 382px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.form-textarea {
+    height: 120px;
+    resize: none;
+}
 /*-------------------------------------------------*/
 
 
