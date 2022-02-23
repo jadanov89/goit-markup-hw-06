@@ -413,29 +413,46 @@
                             </svg> 
         </button>
             <div class="form">
-                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
                     <form>
                         <div class="input-block">
                             <label for="name" class="form-label">Имя</label>
-                                <input type="name" name="name" class="form-input" id="name">
+                            <div>
+                            <svg class="input-icon" width="12" height="12">
+                                <use href="./image/symbol-defs.svg#icon_name"></use>
+                            </svg>
+                           
+                                <input type="name" name="name" class="form-input" maxLength="20" id="name">
+                                </div>
                         </div>
                         <div class="input-block">
+
                         <label for="tel" class="form-label">Телефон</label>
-                            <input type="tel" name="tel" class="form-input" id="tel">
+                            <svg class="input-icon" width="13" height="13">
+                                <use href="./image/symbol-defs.svg#icon_telefon"></use>
+                            </svg> 
+                            <input type="tel" name="tel" class="form-input" id="tel" maxLength="20" >
                         </div>
                         <div class="input-block">
+
                         <label for="mail" class="form-label">Почта</label>
-                            <input type="email" name="mail" class="form-input" id="mail">
+                            <svg class="input-icon" width="15" height="12">
+                                <use href="./image/symbol-defs.svg#icon_email"></use>
+                            </svg> 
+                            <input type="email" name="mail" class="form-input" id="mail" maxLength="20" >
                         </div>
                         <div class="input-block">
                         <label for="user_comm" class="form-label">Комментарий</label>
-                            <textarea type="text" rows="5" placeholder="Введите текст" class="form-input form-textarea"></textarea>
+                            <textarea type="text" rows="5" placeholder="Введите текст" class="form-input form-textarea"  maxLength="120"></textarea>
                         </div>
-                        <label>
-                        <input type="checkbox" name="check" value="check">
-                            Соглашаюсь с рассылкой и принимаю Условия договора
-                        </label>
-                        <button type="submit">Отправить</button>
+                        <div>
+                            <label>
+                            
+                            <input type="checkbox" name="check" value="check">
+                                Соглашаюсь с рассылкой и принимаю Условия договора
+                            </label>
+                            <button type="submit" class="button-form">Отправить</button>
+                        </div>
                     </form>
             </div>
     </div>
