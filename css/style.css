@@ -527,7 +527,8 @@ a {
 }
 
 
-.footer-text-icon {
+.footer-text-icon, 
+.footer-text-form {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -561,6 +562,72 @@ a {
     padding-top: 12px;
     fill: var(--fourth-color);
 }
+
+
+.footer-form-all {
+    display: flex;
+}
+
+.footer-form {
+    margin-left: 93px;
+}
+
+.footer-input {
+    width: 343px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 1.2;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--fourth-color);
+    border-radius: 4px;
+    background: transparent;
+    padding-left: 15px;
+}
+
+.footer-label {
+    position: absolute;
+    padding-top: 15px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-button {
+    display: inline-flex;
+    justify-content: center;
+    min-width: 200px;
+    min-height: 50px;
+    font-size: 16px;
+    line-height: 1.8;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0px;
+    border-radius: 4px;
+    background: var(--brand-color);
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.form-buttom-wrap {
+    padding-left: 10px;
+    padding-top: 13px;
+}
+
+.form-button:hover,
+.form-button:focus {
+    background-color: var(--btn-hover);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
+
+
+
+
 
 /*portfolio*/
 .portfolio-group {
@@ -822,8 +889,14 @@ label, input {
     border: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    
+    cursor: pointer;
 }
+
+.button-form:hover,
+.button-form:focus {
+    background-color: var(--btn-hover);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
 .input-icon {
     display: inline-block;
@@ -836,17 +909,18 @@ label, input {
 
 .form-input:focus ~ .input-icon{
     fill: var(--brand-color);
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.form-input:focus-visible {
+.form-input, .footer-input:focus-visible {
     outline: 0;
     outline-offset: 0;
 }
 
 .form-input:focus {
     border: 1px solid var(--brand-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-checkbox-block {
