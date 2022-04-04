@@ -966,6 +966,7 @@ label, input {
     background: #FFFFFF;
     border: 2px solid var(--secondary-color);
     border-radius: 4px;
+    box-sizing: unset;
 }
 
 .checkbox:checked + .icon-checkbox{
